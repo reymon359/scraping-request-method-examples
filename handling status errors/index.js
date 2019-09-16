@@ -8,7 +8,7 @@ request.debug = 1; // To see the errors in the debug
     try {
         let status = await request({
             uri: 'https://httpbin.org/status/350',
-            resolveWithFullResponse: true
+            resolveWithFullResponse: true // To see all the info
         });
     } catch (response) {
         if (response.statusCode == 300) {
